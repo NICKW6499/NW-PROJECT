@@ -5,6 +5,7 @@ import java.util.Scanner;
 //the four main java data types used in this program are boolean (true/false), int (numbers with no decimals),
 //double (numbers with decimals), and Strings (an array of characters).
 //Java operator precedence is how Java determines which operator to evaluate first.Parentheses,Multiplication and division,then addition and subtraction 
+//Primitive types are the most basic data types available within the Java language. There are 8: boolean, byte, char, short, int, long, float and double. 
 public class Main{
 
 	public static void main(String[] args)throws java.lang.Exception{//header and then parameter in parentheses
