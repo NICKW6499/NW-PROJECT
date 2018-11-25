@@ -1,7 +1,8 @@
+//Nicholis Wright
 package project;
 
 public class Strings {
-@SuppressWarnings("deprecation")
+
 public static String stringStuff(){
 	System.out.println("Array: My program is frustrating because it takes a super long \n "
 			+ "time to figure out how to get everything working! :D");

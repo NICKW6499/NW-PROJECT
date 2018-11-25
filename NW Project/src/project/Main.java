@@ -6,7 +6,8 @@ import java.util.Scanner;
 //double (numbers with decimals), and Strings (an array of characters).
 //Java operator precedence is how Java determines which operator to evaluate first.Parentheses,Multiplication and division,then addition and subtraction 
 //Primitive types are the most basic data types available within the Java language. There are 8: boolean, byte, char, short, int, long, float and double. 
-public class Main{
+//inheritance in java is the ability to allow one class to inherit methods and fields of another class. it is useful because it allows you to not have to rewrite code that you would normally use a lot.
+public class Main extends Knowledge{
 
 	public static void main(String[] args)throws java.lang.Exception{//header and then parameter in parentheses
 		int selection;
@@ -18,11 +19,15 @@ public class Main{
 		System.out.println("3. String stuff");
 		System.out.println("4. Dice");
 		System.out.println("5. Car");
+		System.out.println("6. Loops");
+		System.out.println("7. Array");
+		try {
 		selection = scan.nextInt(); //input
+	
 		switch(selection) {
 		case 1:
 			Knowledge.perimeterArea();//find perimeter and area of a rectangle
-			break;
+			break; // break statement halts a loop and exits it
 		case 2:
 			Car.age();//tells you the age of your car also a method call. No argument within parentheses but that is where it would be
 			break;
@@ -32,13 +37,23 @@ public class Main{
 		case 4:
 			Knowledge.dice();
 			break;
-		case 5:
+		case 5: 
 			Car.myCar("black", "Kia Optima"); //method is Car.myCar and arguments are blue and ford
+			break;
+		case 6:
+			Loops.loop(); // for loops while loops do while loops
+		    break;
+		case 7:
+			myArray.array();
 			break;
 		default:
 			System.out.println("Invalid Selection"); 
+			scan.close();
+		 }
 		}
-		scan.close();
-		}//close switch
+		catch(java.util.InputMismatchException ex) {
+			System.out.println("Enter a number between 1 and 6");
+		}
+	  }//close switch
 	} //close void main
 //close main class

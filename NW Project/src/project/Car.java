@@ -1,3 +1,4 @@
+//Nicholis Wright
 package project; //The goal is for this to work by the end of the semester there is some stuff for this check in it though
 import java.util.Scanner;
 
@@ -17,9 +18,11 @@ import java.util.Scanner;
 	    	Scanner scanModelYear = new Scanner(System.in);
 	    	int modelyear = scanModelYear.nextInt();
 	    	int age =currentyear - modelyear;
-	    	
 	    	scanYearCurrent.close();
 	    	scanModelYear.close();
+	    	
+	    	Scanner sc = new Scanner(System.in);
+	        make = sc.next();
 	    	System.out.println("Your car is " + age + " years old");
 	    }
 	    

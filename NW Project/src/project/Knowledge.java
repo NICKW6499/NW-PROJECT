@@ -1,4 +1,4 @@
-
+//Nicholis Wright
 package project;
 import java.util.Scanner;
 import java.util.Random;
@@ -37,6 +37,11 @@ public static void perimeterArea() {
 		else { 
 			System.out.println("Y is less than 0");
 	}
+	do { // do while loop
+		System.out.println("Is y greater than 10 and less than 15? yes!");
+		y++;//do while loop
+	}
+	while (y>10 && y<15);
 	System.out.println("Y + Z = "+ (y + z));
 	System.out.println("Y - Z = "+ (y - z));
 	System.out.println("Y * Z = "+ (y * z));
@@ -50,8 +55,18 @@ public static int dice() {
 	System.out.println("Roll the dice!");
 	Random roll = new Random();
 
-	int  n = roll.nextInt(6) + 1;
-	System.out.println(n);
+	int n = roll.nextInt(6) + 1;
+	System.out.println("Single dice roll is " + n);
+	return n;
+	
+}
+public static int dice(int n, int m) { // method overloaded, same name but different amount of parameters
+	System.out.println("Roll the dice!");
+	Random roll = new Random();
+
+	n = roll.nextInt(6) + 1;
+	m = roll.nextInt(6) + 1;
+	System.out.println("Double dice roll is " + (n + m));
 	return n;
 	
 }
