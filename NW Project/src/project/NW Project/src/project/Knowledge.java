@@ -28,7 +28,7 @@ public static void perimeterArea() {
 	
 	int y = 60;
 	int z = 15;
-	int a = y < 70 ? y++ : z++;//ternary operator sets a = y as long as y<10 from stackoverflow resource
+	//int a = y < 70 ? y++ : z++;//ternary operator sets a = y as long as y<10 from stackoverflow resource
 	System.out.println("Is Y between 0 and 100?");
 	if (y > 10 && y < 100) {
 		System.out.println(true);}

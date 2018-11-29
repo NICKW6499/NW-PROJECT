@@ -2,7 +2,7 @@
 package project;
 
 public class Loops{
-	public static void loop() {
+	public static void loop() { //do while loop is in Knowledge.java
 	int width = 3;
 	int height = 6;
 	while (height<= 6 && width <=3) { // while loop

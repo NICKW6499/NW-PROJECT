@@ -1,5 +1,4 @@
 //Nicholis Wright
-//newest version
 package project;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class myArray {
 		Integer[] array = {1,2,3,4,5,6};
 System.out.println("One-dimensional array: 1 2 3 4 5 6");
 		System.out.println("Index of 4:" + Arrays.asList(array).indexOf(4));
-		//assign first element of an array to largest and smallest
+		//assign first element of an array to largest and smallest also 1 dimensional array
 		int smallest = array1[0];
 		int largest = array1[0];
 		
@@ -35,11 +34,11 @@ System.out.println("One-dimensional array: 1 2 3 4 5 6");
 	//	int start1 = array1[i];
 	  //  sum += start1 + array1[i];
 		// i++;
-		sum += array1[i]; //sum of the array
+		sum += array1[i];
 	}
 	System.out.println("The sum of the array is " + sum);
     System.out.println();
-    System.out.println("Two dimensional array:"); //two dimensional is a multidimensional array. 
+    System.out.println("Two dimensional array:");
     int[][] twoArray = { {1,2,3,4,5}, {6,7,8,9,10} }; 
     int indexN = 0;
     int indexW = 0;
@@ -58,8 +57,8 @@ System.out.println("One-dimensional array: 1 2 3 4 5 6");
   	  System.out.println();
   	  }
     System.out.println(num);
-    System.out.print("The number 4 is located at coordinates ("+indexN+","+indexW+")\n"); //coordinates of a number
-    ArrayList<String> alist=new ArrayList<String>();  //array list
+    System.out.print("The number 4 is located at coordinates ("+indexN+","+indexW+")\n");
+    ArrayList<String> alist=new ArrayList<String>();  
     alist.add("Steve");
     alist.add("Tim");
     alist.add("Lucy");
